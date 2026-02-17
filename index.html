@@ -1,258 +1,711 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Winter Portfolio - Photography Gallery</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="tooplate-winter-gallery.css">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="Tooplate">
+
+        <title>Moso Interior -  HTML CSS Template</title>
+
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/owl.carousel.min.css" rel="stylesheet">
+
+        <link href="css/tooplate-moso-interior.css" rel="stylesheet">
+        
 <!--
 
-Tooplate 2151 Winter Gallery
+Tooplate 2133 Moso Interior
 
-https://www.tooplate.com/view/2151-winter-gallery
+https://www.tooplate.com/view/2133-moso-interior
 
-Free HTML CSS Template
+Bootstrap 5 HTML CSS Template
 
 -->
-</head>
-<body>
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <a href="#home" class="logo">
-                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <path d="M12 2v20M2 12h20M6 6l12 12M6 18L18 6"/>
-                    <circle cx="12" cy="12" r="2"/>
-                    <circle cx="12" cy="2" r="1.5"/>
-                    <circle cx="12" cy="22" r="1.5"/>
-                    <circle cx="2" cy="12" r="1.5"/>
-                    <circle cx="22" cy="12" r="1.5"/>
-                    <circle cx="6" cy="6" r="1.5"/>
-                    <circle cx="18" cy="18" r="1.5"/>
-                    <circle cx="6" cy="18" r="1.5"/>
-                    <circle cx="18" cy="6" r="1.5"/>
-                </svg>
-                WINTER
-            </a>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    </head>
+    
+    <body>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-bg"></div>
-        <div class="hero-bg"></div>
-        <div class="hero-bg"></div>
-        <div class="hero-content">
-            <h1>Winter Moments</h1>
-            <p>A Collection of Frozen Beauty</p>
-        </div>
-    </section>
+        <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Moso <span class="tooplate-red">Inter</span><span class="tooplate-green">ior</span></a>
 
-    <!-- Filter Section -->
-    <section class="filter-container">
-        <div class="filter-buttons">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="landscapes">Landscapes</button>
-            <button class="filter-btn" data-filter="decorations">Decorations</button>
-            <button class="filter-btn" data-filter="food">Food</button>
-            <button class="filter-btn" data-filter="family">Family</button>
-        </div>
-    </section>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-    <!-- Gallery Section -->
-    <section class="gallery-container" id="gallery">
-        <div class="gallery-grid" id="galleryGrid">
-            <!-- Landscapes -->
-            <div class="gallery-item tall" data-category="landscapes">
-                <img src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=800&q=80" alt="Mountain Snow">
-                <div class="gallery-overlay">
-                    <h3 class="gallery-title">Mountain Snow</h3>
-                    <p class="gallery-category">Landscapes</p>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_1">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_2">About</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle click-scroll" href="#section_3" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                <li><a class="dropdown-item" href="shop-listing.html">Shop Listing</a></li>
+
+                                <li><a class="dropdown-item" href="shop-detail.html">Shop Detail</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_4">Reviews</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_5">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </nav>
 
-            <div class="gallery-item" data-category="decorations">
-                <img src="https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=800&q=80" alt="Ornament Detail">
-                <div class="gallery-overlay">
-                    <h3 class="gallery-title">Ornament Detail</h3>
-                    <p class="gallery-category">Decorations</p>
-                </div>
-            </div>
+        <main>
 
-            <div class="gallery-item" data-category="food">
-                <img src="https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?w=800&q=80" alt="Winter Warmth">
-                <div class="gallery-overlay">
-                    <h3 class="gallery-title">Winter Warmth</h3>
-                    <p class="gallery-category">Food</p>
-                </div>
-            </div>
+            <section class="hero-section hero-slide d-flex justify-content-center align-items-center" id="section_1">
+                <div class="container">
+                    <div class="row">
 
-            <div class="gallery-item" data-category="landscapes">
-                <img src="https://images.unsplash.com/photo-1491002052546-bf38f186af56?w=800&q=80" alt="Frozen Lake">
-                <div class="gallery-overlay">
-                    <h3 class="gallery-title">Frozen Lake</h3>
-                    <p class="gallery-category">Landscapes</p>
-                </div>
-            </div>
+                        <div class="col-lg-8 col-12 text-center mx-auto">
+                            <div class="hero-section-text">
+                                <small class="section-small-title">Welcome to Moso Interior <i class="hero-icon bi-house"></i></small>
 
-            <div class="gallery-item" data-category="family">
-                <img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=800&q=80" alt="Family Joy">
-                <div class="gallery-overlay">
-                    <h3 class="gallery-title">Family Joy</h3>
-                    <p class="gallery-category">Family</p>
-                </div>
-            </div>
+                                <h1 class="hero-title text-white mt-2 mb-4">Decorate a beautiful interior for your space</h1>
 
-            <div class="gallery-item" data-category="decorations">
-                <img src="https://images.unsplash.com/photo-1543589077-47d81606c1bf?w=800&q=80" alt="Holiday Lights">
-                <div class="gallery-overlay">
-                    <h3 class="gallery-title">Holiday Lights</h3>
-                    <p class="gallery-category">Decorations</p>
-                </div>
-            </div>
+                                <form class="custom-form hero-form" action="#" method="get" role="form">
+                                    <div class="row">
+                                        <div class="col-lg-5 col-md-6 col-12">
+                                            <div class="input-group align-items-center">
+                                                <label for="product-name">Product</label>
 
-            <div class="gallery-item" data-category="food">
-                <img src="https://images.unsplash.com/photo-1514517521153-1be72277b32f?w=800&q=80" alt="Festive Treats">
-                <div class="gallery-overlay">
-                    <h3 class="gallery-title">Festive Treats</h3>
-                    <p class="gallery-category">Food</p>
-                </div>
-            </div>
+                                                <input type="text" name="product-name" id="product-name" class="form-control" placeholder="Bathroom, Living Room..." required>
+                                            </div>
+                                        </div>
 
-            <div class="gallery-item tall" data-category="landscapes">
-                <img src="https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?w=800&q=80" alt="Winter Forest">
-                <div class="gallery-overlay">
-                    <h3 class="gallery-title">Winter Forest</h3>
-                    <p class="gallery-category">Landscapes</p>
-                </div>
-            </div>
+                                        <div class="col-lg-5 col-md-6 col-12">
+                                            <div class="input-group align-items-center">
+                                                <label for="last-name">Price</label>
 
-            <div class="gallery-item" data-category="family">
-                <img src="https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=800&q=80" alt="Winter Together">
-                <div class="gallery-overlay">
-                    <h3 class="gallery-title">Winter Together</h3>
-                    <p class="gallery-category">Family</p>
-                </div>
-            </div>
+                                                <select name="price-range" class="form-select form-control" id="price-range" aria-label="Default select example">
+                                                    <option value="500" selected>$500 to $990</option>
+                                                    <option value="1000">$1,000 - 2,900</option>
+                                                    <option value="3000">$3,000 - 5,000</option>
+                                                    <option value="5000">$5,000 - 10,000</option>
+                                                    <option value="11000">$11,000 - 25,000</option>
+                                                </select>
+                                            </div>
+                                        </div>
 
-            <div class="gallery-item" data-category="decorations">
-                <img src="https://images.unsplash.com/photo-1512909006721-3d6018887383?w=800&q=80" alt="Gift Wrapping">
-                <div class="gallery-overlay">
-                    <h3 class="gallery-title">Gift Wrapping</h3>
-                    <p class="gallery-category">Decorations</p>
-                </div>
-            </div>
+                                        <div class="col-lg-2 col-md-6 col-12">
+                                            <button type="submit" class="form-control">Search</button>
+                                        </div>
+                                    </div>
+                                </form>
 
-            <div class="gallery-item" data-category="landscapes">
-                <img src="https://images.unsplash.com/photo-1476820865390-c52aeebb9891?w=800&q=80" alt="Snowy Path">
-                <div class="gallery-overlay">
-                    <h3 class="gallery-title">Snowy Path</h3>
-                    <p class="gallery-category">Landscapes</p>
-                </div>
-            </div>
+                                <div class="hero-btn d-flex justify-content-center align-items-center">
+                                    <a class="bi-arrow-down hero-btn-link smoothscroll" href="#section_2"></a>
+                                </div> 
+                            </div>
+                        </div>
 
-            <div class="gallery-item" data-category="food">
-                <img src="https://images.unsplash.com/photo-1514517220017-8ce97a34a7b6?w=800&q=80" alt="Cozy Drinks">
-                <div class="gallery-overlay">
-                    <h3 class="gallery-title">Cozy Drinks</h3>
-                    <p class="gallery-category">Food</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Lightbox -->
-    <div class="lightbox" id="lightbox">
-        <button class="lightbox-close" id="closeLightbox">×</button>
-        <button class="lightbox-nav lightbox-prev" id="prevImage">‹</button>
-        <button class="lightbox-nav lightbox-next" id="nextImage">›</button>
-        <div class="lightbox-content">
-            <img src="" alt="" id="lightboxImage">
-            <div class="lightbox-info">
-                <h3 id="lightboxTitle"></h3>
-                <p id="lightboxCategory"></p>
-            </div>
-        </div>
-    </div>
-
-    <!-- About Section -->
-    <section class="about-section" id="about">
-        <h2>About</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>Capturing the serene beauty of winter landscapes has been my passion for over a decade. Each photograph tells a story of frozen moments, quiet snowfalls, and the peaceful stillness that blankets the world during the coldest months.</p>
-                <p>From the majestic mountain peaks covered in pristine snow to intimate family moments wrapped in winter warmth, my work celebrates the unique beauty that this season brings. Through my lens, I aim to preserve the fleeting magic of winter—the way light dances on ice crystals, the cozy comfort of holiday gatherings, and the breathtaking landscapes transformed by snow.</p>
-                <p>My photography has been featured in various publications and exhibitions, and I continue to explore new ways to capture the essence of winter's wonder.</p>
-            </div>
-            <div>
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1452802447250-470a88ac82bc?w=800&q=80" alt="Photographer">
-                </div>
-                <div class="about-stats">
-                    <div class="stat-box">
-                        <div class="stat-number">10+</div>
-                        <div class="stat-label">Years Experience</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-number">500+</div>
-                        <div class="stat-label">Photos Captured</div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- Contact Section -->
-    <section class="contact-section" id="contact">
-        <h2>Get in Touch</h2>
-        <p>Let's work together to capture your winter moments</p>
-        
-        <form class="contact-form">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-            <button type="submit" class="submit-btn">Send Message</button>
-        </form>
+            <section class="about-section section-padding" id="section_2">
+                <div class="container">
+                    <div class="row align-items-center">
 
-        <div class="contact-info">
-            <div class="contact-item">
-                <span>📧</span>
-                <a href="mailto:hello@winterportfolio.com">hello@winterportfolio.com</a>
-            </div>
-            <div class="contact-item">
-                <span>📱</span>
-                <a href="tel:+15551234567">+1 (555) 123-4567</a>
-            </div>
-            <div class="contact-item">
-                <span>📍</span>
-                <a href="https://www.google.com/maps/search/?api=1&query=Colorado+USA" target="_blank">Colorado, USA</a>
-            </div>
-        </div>
-    </section>
+                        <div class="col-lg-5 col-12">
+                            <small class="section-small-title">Our Story</small>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Winter Portfolio • Designed by <a rel="nofollow" href="https://www.tooplate.com" target="_blank">Tooplate</a></p>
-    </footer>
-<script src="tooplate-winter-scripts.js"></script>
-</body>
+                            <h2 class="mt-2 mb-4"><span class="text-muted">Introducing</span> Moso</h2>
+
+                            <h4 class="text-muted mb-3">Since 1986, We crafted interior products for better spaces</h4>
+
+                            <p>Moso Interior is a free Bootstrap 5 HTML CSS template for your website. Tooplate is one of the best websites to download 100% free HTML Templates for web designers and developers around the world. Thank you for visiting.</p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-5 col-5 mx-lg-auto">
+                            <img src="images/sharing-design-ideas-with-family.jpg" class="about-image about-image-small img-fluid" alt="">
+                        </div>
+
+                        <div class="col-lg-4 col-md-7 col-7">
+                            <img src="images/living-room-interior-wall-mockup-warm-tones-with-leather-sofa-which-is-kitchen-3d-rendering.jpg" class="about-image img-fluid" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="featured-section section-padding">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-5 col-12">
+                            <div class="custom-block featured-custom-block">
+                                <h2 class="mt-2 mb-4">Opening Hours</h2>
+
+                                <div class="d-flex">
+                                    <i class="featured-icon bi-clock me-3"></i>
+                                    
+                                    <div>
+                                        <p class="mb-2">
+                                            Mon - Friday ~
+                                            <strong class="d-inline">
+                                                8:00 AM - 6:00 PM
+                                            </strong>
+                                        </p>
+
+                                        <p class="mb-2">
+                                            Saturday ~
+                                            <strong class="d-inline">
+                                                10:00 AM - 10:00 PM
+                                            </strong>
+                                        </p>
+
+                                        <p>Sunday ~ Closed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="shop-section section-padding" id="section_3">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12">
+                            <small class="section-small-title">Moso Design Shop</small>
+
+                            <h2 class="mt-2 mb-4"><span class="tooplate-red">Interior</span> Products</h2>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="shop-thumb">
+                                <div class="shop-image-wrap">
+                                    <a href="shop-detail.html">
+                                        <img src="images/shop/minimal-bathroom-interior-design-with-wooden-furniture.jpg" class="shop-image img-fluid" alt="">
+                                    </a>
+
+                                    <div class="shop-icons-wrap">
+                                        <div class="shop-icons d-flex flex-column align-items-center">
+                                            <a href="#" class="shop-icon bi-heart"></a>
+
+                                            <a href="#" class="shop-icon bi-bookmark"></a>
+                                        </div>
+
+                                        <p class="shop-pricing mb-0 mt-3">
+                                            <span class="badge custom-badge">$3,600</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="shop-btn-wrap">
+                                        <a href="shop-detail.html" class="shop-btn custom-btn btn d-flex align-items-center align-items-center">Learn more</a>
+                                    </div>
+                                </div>
+
+                                <div class="shop-body">
+                                    <h4>Bathroom</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="shop-thumb">
+                                <div class="shop-image-wrap">
+                                    <a href="shop-detail.html">
+                                        <img src="images/shop/mock-up-poster-modern-dining-room-interior-design-with-white-empty-wall.jpg" class="shop-image img-fluid" alt="">
+                                    </a>
+
+                                    <div class="shop-icons-wrap">
+                                        <div class="shop-icons d-flex flex-column align-items-center">
+                                            <a href="#" class="shop-icon bi-heart"></a>
+
+                                            <a href="#" class="shop-icon bi-bookmark"></a>
+                                        </div>
+
+                                        <p class="shop-pricing mb-0 mt-3">
+                                            <span class="badge custom-badge">$6,400</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="shop-btn-wrap">
+                                        <a href="shop-detail.html" class="shop-btn custom-btn btn d-flex align-items-center align-items-center">Learn more</a>
+                                    </div>
+                                </div>
+
+                                <div class="shop-body">
+                                    <h4>Dining</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-12">
+                            <div class="shop-thumb">
+                                <div class="shop-image-wrap">
+                                    <a href="shop-detail.html">
+                                        <img src="images/shop/green-sofa-white-living-room-with-blank-table-mockup.jpg" class="shop-image img-fluid" alt="">
+                                    </a>
+
+                                    <div class="shop-icons-wrap">
+                                        <div class="shop-icons d-flex flex-column align-items-center">
+                                            <a href="#" class="shop-icon bi-heart"></a>
+
+                                            <a href="#" class="shop-icon bi-bookmark"></a>
+                                        </div>
+
+                                        <p class="shop-pricing mb-0 mt-3">
+                                            <span class="badge custom-badge">$2,400</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="shop-btn-wrap">
+                                        <a href="shop-detail.html" class="shop-btn custom-btn btn d-flex align-items-center align-items-center">Learn more</a>
+                                    </div>
+                                </div>
+
+                                <div class="shop-body">
+                                    <h4>Living Room</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-12">
+                            <div class="shop-thumb">
+                                <div class="shop-image-wrap">
+                                    <a href="shop-detail.html">
+                                        <img src="images/shop/concept-home-cooking-with-female-chef.jpg" class="shop-image img-fluid" alt="">
+                                    </a>
+
+                                    <div class="shop-icons-wrap">
+                                        <div class="shop-icons d-flex flex-column align-items-center">
+                                            <a href="#" class="shop-icon bi-heart"></a>
+
+                                            <a href="#" class="shop-icon bi-bookmark"></a>
+                                        </div>
+
+                                        <p class="shop-pricing mb-0 mt-3">
+                                            <span class="badge custom-badge">$3,800</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="shop-btn-wrap">
+                                        <a href="shop-detail.html" class="shop-btn custom-btn btn d-flex align-items-center align-items-center">Learn more</a>
+                                    </div>
+                                </div>
+
+                                <div class="shop-body">
+                                    <h4>Chef Kitchen</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-12">
+                            <div class="shop-thumb">
+                                <div class="shop-image-wrap">
+                                    <a href="shop-detail.html">
+                                        <img src="images/shop/childrens-bed-nursery-cot-velvet-childrens-room.jpg" class="shop-image img-fluid" alt="">
+                                    </a>
+
+                                    <div class="shop-icons-wrap">
+                                        <div class="shop-icons d-flex flex-column align-items-center">
+                                            <a href="#" class="shop-icon bi-heart"></a>
+
+                                            <a href="#" class="shop-icon bi-bookmark"></a>
+                                        </div>
+
+                                        <p class="shop-pricing mb-0 mt-3">
+                                            <span class="badge custom-badge">$850</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="shop-btn-wrap">
+                                        <a href="shop-detail.html" class="shop-btn custom-btn btn d-flex align-items-center align-items-center">Learn more</a>
+                                    </div>
+                                </div>
+
+                                <div class="shop-body">
+                                    <h4>Childrens Bedroom</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 col-12">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="page-item active" aria-current="page">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">4</a>
+                                    </li>
+
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">5</a>
+                                    </li>
+                                    
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="reviews-section section-padding pb-0" id="section_4">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12">
+                            <small class="section-small-title">Happy customers.</small>
+
+                            <h2 class="mt-2 mb-4">Reviews</h2>
+
+                            <div class="owl-carousel reviews-carousel">
+                                <div class="reviews-thumb">
+                                    <div class="reviews-body">
+                                        <h4>Moso Interior is the most suitable website layout.</h4>
+                                    </div>
+
+                                    <div class="reviews-bottom reviews-bottom-up d-flex align-items-center">
+                                        <img src="images/avatar/pretty-blonde-woman-wearing-white-t-shirt.jpg" class="avatar-image img-fluid" alt="">
+
+                                        <div class="d-flex align-items-center justify-content-between flex-wrap w-100 ms-3">
+                                            <p class="text-white mb-0">
+                                                <strong>Sandy</strong>, <small>CEO</small>
+                                            </p>
+
+                                            <div class="reviews-icons">
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="reviews-thumb">
+                                    <div class="reviews-body">
+                                        <h4>Explore more HTML Templates to download for your website.</h4>
+                                    </div>
+
+                                    <div class="reviews-bottom reviews-bottom-up d-flex align-items-center">
+                                        <img src="images/avatar/studio-portrait-emotional-happy-funny-smiling-boyfriend-man-with-heavy-beard-stands-with-arms-crossed-dressed-red-t-shirt-isolated-blue.jpg" class="avatar-image img-fluid" alt="">
+
+                                        <div class="d-flex align-items-center justify-content-between flex-wrap w-100 ms-3">
+                                            <p class="text-white mb-0">
+                                                <strong>Jack</strong>, <small>Partner</small>
+                                            </p>
+
+                                            <div class="reviews-icons">
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star"></i>
+                                                <i class="bi-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="reviews-thumb">
+                                    <div class="reviews-body">
+                                        <h4>Please recommend Tooplate website to your friends.</h4>
+                                    </div>
+
+                                    <div class="reviews-bottom reviews-bottom-up d-flex align-items-center">
+                                        <img src="images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg" class="avatar-image img-fluid" alt="">
+
+                                        <div class="d-flex align-items-center justify-content-between flex-wrap w-100 ms-3">
+                                            <p class="text-white mb-0">
+                                                <strong>Helen</strong>, <small>Client</small>
+                                            </p>
+
+                                            <div class="reviews-icons">
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="reviews-thumb">
+                                    <div class="reviews-body">
+                                        <h4>This Bootstrap 5 layout is free to use for your website.</h4>
+                                    </div>
+
+                                    <div class="reviews-bottom reviews-bottom-up d-flex align-items-center">
+                                        <img src="images/avatar/portrait-young-redhead-bearded-male-wears-white-t-shirt-keeps-his-eyes-closed-smiling-feels-happy-yellow.jpg" class="avatar-image img-fluid" alt="">
+
+                                        <div class="d-flex align-items-center justify-content-between flex-wrap w-100 ms-3">
+                                            <p class="text-white mb-0">
+                                                <strong>Bill</strong>, <small>Designer</small>
+                                            </p>
+
+                                            <div class="reviews-icons">
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star"></i>
+                                                <i class="bi-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="reviews-thumb">
+                                    <div class="reviews-body">
+                                        <h4>Thank you for visiting Tooplate to download free templates.</h4>
+                                    </div>
+
+                                    <div class="reviews-bottom reviews-bottom-up d-flex align-items-center">
+                                        <img src="images/avatar/portrait-young-beautiful-woman-gesticulating.jpg" class="avatar-image img-fluid" alt="">
+
+                                        <div class="d-flex align-items-center justify-content-between flex-wrap w-100 ms-3">
+                                            <p class="text-white mb-0">
+                                                <strong>Susan</strong>, <small>Boss</small>
+                                            </p>
+
+                                            <div class="reviews-icons">
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-12">
+                                <p class="d-flex justify-content-center align-items-center mt-lg-5">Write some reviews on <a href="#" class="custom-btn btn ms-3"><i class="bi-facebook me-2"></i>facebook</a></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="contact-section" id="section_5">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f9f9f9" fill-opacity="1" d="M0,96L40,117.3C80,139,160,181,240,186.7C320,192,400,160,480,149.3C560,139,640,149,720,176C800,203,880,245,960,250.7C1040,256,1120,224,1200,229.3C1280,235,1360,277,1400,298.7L1440,320L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12">
+                            <small class="section-small-title">Ask anything.</small>
+
+                            <h2 class="mb-4">Say Hello</h2>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <form class="custom-form contact-form" action="#" method="post" role="form">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="input-group align-items-center">
+                                            <label for="first-name">First Name</label>
+
+                                            <input type="text" name="first-name" id="first-name" class="form-control" placeholder="Jack" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="input-group align-items-center">
+                                            <label for="last-name">Last Name</label>
+
+                                            <input type="text" name="last-name" id="last-name" class="form-control" placeholder="Doe" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="input-group align-items-center">
+                                    <label for="email">Email Address</label>
+
+                                     <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Jackdoe@gmail.com" required>
+                                </div>
+
+                                <div class="input-group textarea-group">
+                                    <label for="message">Message</label>
+
+                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="What can we help you?"></textarea>
+                                </div>
+
+                                <div class="col-lg-3 col-md-4 col-6">
+                                    <button type="submit" class="form-control">Send</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+                            <div class="custom-block">
+
+                                <h3 class="text-white mb-2">Store</h3>
+
+                                <p class="text-white mb-2">
+                                    <i class="contact-icon bi-geo-alt me-1"></i>
+
+                                    102 Utah Road, Berlin, Germany
+                                </p>
+
+                                <h3 class="text-white mt-3 mb-2">Contact Info</h3>
+
+                                <div class="d-flex flex-wrap">
+                                    <p class="text-white mb-2 me-4">
+                                        <i class="contact-icon bi-telephone me-1"></i>
+
+                                        <a href="tel: 090-080-0760" class="text-white">
+                                            090-080-0760
+                                        </a>
+                                    </p>
+
+                                    <p class="text-white">
+                                        <i class="contact-icon bi-envelope me-1"></i>
+
+                                        <a href="mailto:info@company.com" class="text-white">
+                                            info@company.com
+                                        </a>
+                                    </p>
+                                </div>
+
+                                <iframe class="google-map mt-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4800.184803804974!2d-0.10174304922518053!3d51.5087879746898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487605f6fc62fa3d%3A0xc5a39e7cf4e3a9a4!2sTate%20Modern%20Garden!5e1!3m2!1sen!2smm!4v1679331839559!5m2!1sen!2smm" width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#36363e" fill-opacity="1" d="M0,96L40,117.3C80,139,160,181,240,186.7C320,192,400,160,480,149.3C560,139,640,149,720,176C800,203,880,245,960,250.7C1040,256,1120,224,1200,229.3C1280,235,1360,277,1400,298.7L1440,320L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>            
+        </main>
+
+        <footer class="site-footer section-padding">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-5 col-12 mb-3">
+                        <h3><a href="index.html" class="custom-link mb-1">Moso Interior</a></h3>
+
+                        <p class="text-white">Since 1986, We crafted interior products for better spaces</p>
+                        
+                        <p class="text-white"><a href="https://www.tooplate.com" target="_parent">Web Design: Tooplate</a></p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-12 ms-lg-auto mb-3">
+                        <h3 class="text-white mb-3">Store</h3>
+
+                        <p class="text-white mt-2">
+                            <i class="bi-geo-alt"></i>
+                            Berlin, Germany
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-12 mb-3">
+                        <h3 class="text-white mb-3">Contact Info</h3>
+
+                            <p class="text-white mb-1">
+                                <i class="bi-telephone me-1"></i>
+
+                                <a href="tel: 090-080-0760" class="text-white">
+                                    090-080-0760
+                                </a>
+                            </p>
+
+                            <p class="text-white mb-0">
+                                <i class="bi-envelope me-1"></i>
+
+                                <a href="mailto:info@company.com" class="text-white">
+                                    info@company.com
+                                </a>
+                            </p>
+                    </div>
+
+                    <div class="col-lg-6 col-md-7 copyright-text-wrap col-12 d-flex flex-wrap align-items-center mt-4 ms-auto">
+                        <p class="copyright-text mb-0 me-4">Copyright © Moso Interior 2048</p>
+
+                        <ul class="social-icon">
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link social-icon-twitter bi-twitter"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link social-icon-facebook bi-facebook"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link social-icon-instagram bi-instagram"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link social-icon-pinterest bi-pinterest"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link social-icon-whatsapp bi-whatsapp"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/jquery.backstretch.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
 </html>
